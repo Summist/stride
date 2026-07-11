@@ -1,1 +1,5 @@
-<Solution />
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/Stride.Domain/Stride.Domain.csproj" />
+  </Folder>
+</Solution>
