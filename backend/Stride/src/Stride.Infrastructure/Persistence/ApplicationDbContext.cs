@@ -1,10 +1,12 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Stride.Application.Abstractions;
 using Stride.Domain.Catalog;
 
 namespace Stride.Infrastructure.Persistence;
 
 public sealed class ApplicationDbContext(
-    DbContextOptions<ApplicationDbContext> options) : DbContext(options)
+    DbContextOptions<ApplicationDbContext> options) 
+    : DbContext(options), IApplicationDbContext
 {
     public DbSet<Brand> Brands { get; set; }
 
