@@ -20,6 +20,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Stride.Application\Stride.Application.csproj" />
     <ProjectReference Include="..\Stride.Domain\Stride.Domain.csproj" />
   </ItemGroup>
 
