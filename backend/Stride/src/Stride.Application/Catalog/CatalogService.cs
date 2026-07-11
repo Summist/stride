@@ -15,7 +15,7 @@ internal sealed class CatalogService(
     {
         IQueryable<Product> query = dbContext.Products
             .AsNoTracking()
-            .Where(x => x.IsActive);
+            .Where(x => x.Status == ProductStatus.Active);
 
         if (!string.IsNullOrWhiteSpace(filter.Search))
         {
