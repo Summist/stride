@@ -35,7 +35,4 @@ public sealed class Product : AuditableEntityBase
 
 
     public ICollection<ProductVariant> Variants { get; set; } = [];
-
-
-    public bool IsActive { get; set; }
 }
