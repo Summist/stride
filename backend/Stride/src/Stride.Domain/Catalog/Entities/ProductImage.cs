@@ -4,6 +4,8 @@ namespace Stride.Domain.Catalog;
 
 public sealed class ProductImage : EntityBase
 {
+    public const int MaxImageUrlLength = 1000;
+
     public Guid ProductId { get; set; }
 
     public Product Product { get; set; } = null!;

@@ -11,4 +11,7 @@ public sealed class Size : EntityBase
     public decimal UkSize { get; set; }
 
     public decimal FootLengthCm { get; set; }
+
+
+    public ICollection<ProductVariant> Variants { get; set; } = [];
 }

@@ -4,6 +4,10 @@ namespace Stride.Domain.Catalog;
 
 public sealed class Product : AuditableEntityBase
 {
+    public const int MaxNameLength = 100;
+    public const int MaxDescriptionLength = 500;
+    public const int MaxArticleLength = 50;
+
     public ICollection<ProductImage> Images { get; set; } = [];
 
 
